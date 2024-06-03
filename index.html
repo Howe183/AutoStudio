@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>TheaterGen</title>
+  <link rel="icon" type="image/x-icon" href="static/images/theater.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">TheaterGen: Character Management with LLM for Consistent Multi-turn Image Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Junhao Cheng</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Baiqiao Yin</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Kaixin Cai</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Minbin Huang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                Hanhui Li</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Yuxin He</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Xi Lu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Yue Li</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Yifei Li</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Yuhao Cheng</a><sup>3</sup>,</span>
+              <span class="author-block">
+                Yiqiang Yan</a><sup>3</sup>,</span>
+              <span class="author-block">
+                Xiaodan Liang</a><sup>1</sup>,</span>                
+              </span>
+              </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">1. Shenzhen Campus of Sun Yat-sen University <br> 2. The Chinese University of Hong Kong <br> 3. Lenovo Research</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2404.18919" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://github.com/donahowe/Theatergen/tree/main/CMIGBench" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Benchmark</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/donahowe/Theatergen" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2404.18919" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/demo.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Theatergen can interact with users to consistently generate images over multiple Turns.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent advances in diffusion models can generate high-quality and stunning images from text. However, multi-turn image generation, which is of high demand in real-world scenarios, still faces challenges in maintaining semantic consistency between images and texts, as well as contextual consistency of the same subject across multiple interactive turns. To address this issue, we introduce TheaterGen, a training-free framework that integrates large language models (LLMs) and text-to-image (T2I) models to provide the capability of multi-turn image generation. Within this framework, LLMs, acting as a "Screenwriter", engage in multi-turn interaction, generating and managing a standardized prompt book that encompasses prompts and layout designs for each character in the target image. Based on character prompts and layouts, we generate a list of character images and extract guidance information from them, akin to the "Rehearsal". Subsequently, through incorporating the prompt book and guidance information into the reverse denoising process of T2I diffusion models, we generate the final image, as conducting the "Final Performance". With the effective management of prompt books and character images, TheaterGen significantly improves semantic and contextual consistency in synthesized images. Furthermore, we introduce a dedicated benchmark, CMIGBench (Consistent Multi-turn Image Generation Benchmark) with 8000 multi-turn instructions. Different from previous multi-turn benchmarks, CMIGBench does not define characters in advance, and hence it is of great diversity. Both the tasks of story generation and multi-turn editing are included on CMIGBench for comprehensive evaluation. Extensive experimental results show that TheaterGen outperforms state-of-the-art methods significantly. For example, it raises the performance bar of the cutting-edge Mini DALL·E 3 model by 21% in average character-character similarity and 19% in average text-image similarity. Our code and CMIGBench can be found in supplementary materials.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Main Framework -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align: center;">Framework</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/main_new.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          The overall structure of TheaterGen. TheaterGen utilizes three key components to generate an image in each interaction turn: (a) an LLM-based character designer that interacts with the user and maintains a structured prompt book for all character prompts and layouts, which serves as the  <strong>"screenwriter"</strong> ; (b) a character image manager for <strong>"rehearsal"</strong>, which generates character images and extracts guidance based on the prompt book; (c) a character-guided generator that conducts the <strong>"final performance"</strong>, i.e., generates the final image for the current turn by combining the prompt book and guidance information.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/guidance.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          The proposed guidance extractor. It first extracts subjects from character images and rearranges them into the same image according to the layout. Then the lineart guidance and the latent guidance for subsequent image generation are obtained via a lineart processer and the forward diffusion process, respectively.
+        </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Main Framework -->
+
+
+<!-- Benchmark -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align: center;">Benchmark</h2>
+      <div class="item">
+        <!-- Your JSON data here with scrollable area -->
+        <pre style="max-height: 400px; overflow-y: scroll; background-color: #f4f4f4; border-radius: 5px; padding: 20px;"><code>
+        {
+          {
+            "dialogue 1": {
+              "characters": [
+                  "sparrow",
+                  "lion",
+                  "eagle"
+              ],
+              "scene": [
+                  "library"
+              ],
+              "turn 1": {
+                  "caption": "In the silent library, a tiny sparrow was fluttering near a shelf.",
+                  "objects": [
+                      [
+                          "a tiny sparrow",
+                          [
+                              115.5,
+                              170.5,
+                              89,
+                              59
+                          ],
+                          1
+                      ],
+                      [
+                          "a library shelf",
+                          [
+                              215.5,
+                              165.5,
+                              171,
+                              171
+                          ],
+                          2
+                      ]
+                  ],
+                  "background": "A silent library",
+                  "negative": "None"
+              },
+              "turn 2": {
+                  "caption": "An attentive lion in one corner was carefully observing the bird and holding its breath.",
+                  "objects": [
+                      [
+                          "an attentive lion",
+                          [
+                              300.5,
+                              221.0,
+                              162,
+                              180
+                          ],
+                          3
+                      ],
+                      [
+                          "a tiny sparrow",
+                          [
+                              40.5,
+                              101.0,
+                              89,
+                              59
+                          ],
+                          1
+                      ]
+                  ],
+                  "background": "A silent library",
+                  "negative": "None"
+              },
+              "turn 3": {
+                  "caption": "Above them, a vigilant eagle watched the suspenseful scene unfold from the library ceiling.",
+                  "objects": [
+                      [
+                          "a vigilant eagle",
+                          [
+                              345.5,
+                              41.0,
+                              119,
+                              72
+                          ],
+                          4
+                      ],
+                      [
+                          "an observing lion",
+                          [
+                              295.5,
+                              281.0,
+                              162,
+                              180
+                          ],
+                          3
+                      ],
+                      [
+                          "a sparrow",
+                          [
+                              45.5,
+                              171.0,
+                              89,
+                              59
+                          ],
+                          1
+                      ]
+                  ],
+                  "background": "A silent library",
+                  "negative": "None"
+              },
+              "turn 4": {
+                  "caption": "The scenario ended peacefully as the eagle, the lion, and the sparrow all resumed their own activities in the vast library.",
+                  "objects": [
+                      [
+                          "an occupying eagle",
+                          [
+                              335.5,
+                              41.0,
+                              119,
+                              72
+                          ],
+                          4
+                      ],
+                      [
+                          "a peaceful lion",
+                          [
+                              285.5,
+                              281.0,
+                              162,
+                              180
+                          ],
+                          3
+                      ],
+                      [
+                          "a sparrow",
+                          [
+                              55.5,
+                              181.0,
+                              89,
+                              59
+                          ],
+                          1
+                      ]
+                  ],
+                  "background": "A vast library",
+                  "negative": "None"
+              }
+            }
+          }
+        }</code></pre>
+        <h2 class="subtitle has-text-centered">
+          we propose a <strong>C</strong>onsistent <strong>M</strong>ulti-turn <strong>I</strong>mage <strong>G</strong>eneration <strong>Bench</strong>mark: <strong>CMIGBench</strong>. This benchmark focuses on two common types found in multi-turn image generation: story generation and multi-turn editing, comprising 8000 multi-turn scripted dialogues (4000 for each task) with each consisting of 4 turns of natural language instructions. This allows us to evaluate the semantic consistency and contextual consistency of different models in multi-turn image generation in a zero-shot manner.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Benchmark -->
+
+
+<!-- Story generation -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align: center;">Story generation</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vis_7.png" alt="MY ALT TEXT" width="1200" height="800"/>
+          <h2 class="subtitle has-text-centered">
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vis_8.png" alt="MY ALT TEXT" width="1200" height="800"/>
+          <h2 class="subtitle has-text-centered">
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vis_9.png" alt="MY ALT TEXT" width="1200" height="800"/>
+          <h2 class="subtitle has-text-centered">
+         </h2>
+       </div>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vis_10.png" alt="MY ALT TEXT" width="1200" height="800"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vis_11.png" alt="MY ALT TEXT" width="1200" height="800"/>
+        <h2 class="subtitle has-text-centered">
+       </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- Story generation -->
+
+<!-- Multi turn editing -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align: center;">Multi turn editing</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vis_2.png" alt="MY ALT TEXT" width="1200" height="800"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vis_3.png" alt="MY ALT TEXT" width="1200" height="800"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/vis_4.png" alt="MY ALT TEXT" width="1200" height="800"/>
+        <h2 class="subtitle has-text-centered">
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/vis_5.png" alt="MY ALT TEXT" width="1200" height="800"/>
+      <h2 class="subtitle has-text-centered">
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/vis_6.png" alt="MY ALT TEXT" width="1200" height="800"/>
+      <h2 class="subtitle has-text-centered">
+     </h2>
+   </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- Multi turn editing -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
